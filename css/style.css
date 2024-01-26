@@ -1,0 +1,675 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+/* navbar */
+.navbar{
+    width: 100%;
+    /* position: fixed;
+    z-index: 1000; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 1.5rem;
+    width: 85%;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: darkgrey;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  .logo a .img-logo{
+    width: 200px;
+    height: 60px;
+  }
+  .logo .social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .social-links a{
+    margin: 0;
+  }
+  .social-links a i{
+    color: #283790;
+
+    font-size: 50px;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  .social-links a i:hover{
+    color: #31a7fc;
+  }
+  .menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  
+  }
+  .menu li a{
+    text-decoration: none;
+    color: #283790;
+    font-family: "Roboto Mono", monospace;
+    padding: 5px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all 0.5s ease;
+  }
+  .menu li a:hover{
+   text-decoration: underline;
+  }
+  .burger{
+    display: none;
+  }
+
+  /* INTRO */
+  .intro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  .intro .main-intro{
+    width: 1000px;
+    display: flex;
+    margin: 50px 0;
+    background-color: #182364;
+    padding: 0;
+    overflow: hidden;
+  }
+  .main-intro .left-intro{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .left-intro img{
+    object-position: center center;
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+  }
+  .main-intro .right-intro{
+    width: 40%;
+   padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cen;
+  }
+  .right-intro p{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #F5F5F5;
+  }
+  .right-intro h2{
+    font-size: 45px;
+    text-align: center;
+    line-height: 3.7rem;
+    margin-bottom: 25px;
+    color: #31a7fc;
+    font-family: "Roboto Mono", monospace;
+  }
+  .right-intro .inquiry{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .inquiry a{
+    font-size: 18px;
+    padding: 15px 25px;
+    background-color: #F5F5F5;
+    color: #283790;
+    transition: 0.5S ease;
+  }
+  .inquiry a:hover{
+    color: white;
+    background-color: black;
+  }
+
+  /* what we do */
+  .what-we-do{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .what-we-do .main-what{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-what .title{
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .title .title-what{
+    font-size: 25px;
+    color: #182364;
+    font-family: "Roboto Mono", monospace;
+    padding: 5px 15px;
+    border: 2px solid #31a7fc;
+}
+  
+.main-what .explanations{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explanations .explain{
+    width: 33.3%;
+    height: 450px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/businessman-having-videocall-work.jpg);
+  background-position: center;
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+.explanations .explain:nth-child(2){
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/african-business-male-people-shaking-hands.jpg);
+}
+.explanations .explain:nth-child(3){
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/investment.jpg);
+}
+.explain .explain-title{
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #f8f6f6;
+    font-family: "Roboto Mono", monospace;
+}
+.explain p{
+    font-size: 18px;
+    color: #f8f6f6;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+.about-us{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.about-us .main-about-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-about-us .title{
+    width: 85%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .title .title-what{
+    font-size: 25px;
+    font-family: "Roboto Mono", monospace;
+    padding: 5px 15px;
+    border: 2px solid #31a7fc;
+  }
+  .main-about-us .first-row{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .first-row .first-about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+  }
+  .first-about img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .first-about .info-about{
+    width: 100%;
+    height: 45vh;
+    padding: 30px;
+display: flex;
+flex-direction: column;
+
+align-items: center;
+background-color: #182364;
+  }
+  .info-about h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #31a7fc;
+    font-family: "Roboto Mono", monospace;
+  }
+  .info-about p{
+    font-size: 15px;
+    text-align: center;
+    color: #f8f6f6;
+  }
+
+  .main-about-us .second-row{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .second-row .second-about{
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .second-about img{
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+  .second-about .info-about{
+    width: 100%;
+    height: 45vh;
+    padding: 30px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #182364;
+  }
+  .info-about h2{
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #31a7fc;
+    font-family: "Roboto Mono", monospace;
+  }
+  .info-about p{
+    font-size: 15px;
+    text-align: center;
+    color: #f8f6f6;
+  }
+
+  footer{
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .main-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .main-footer .logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .logo img{
+    width: 200px;
+    height: 60px;
+  }
+  .main-footer .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .socials a{
+    margin: 0;
+  }
+  .socials a i{
+    color: #283790;
+
+    font-size: 70px;
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+  .socials a i:hover{
+    color: #31a7fc;
+  }
+  .main-footer .contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .contact p{
+    font-size: 20px;
+    color: #283790;
+    padding: 10px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .main-footer .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid #182364;
+
+  }
+  .copyright p{
+    color: #283790;
+    font-size: 15px;
+  }
+
+
+  @media screen and (max-width:770px){
+
+    .menu{
+      display: none;
+    }
+    .burger{
+      display: block;
+      cursor: pointer;
+    }
+    .line1,
+    .line2,
+    .line3{
+      width: 25px;
+      height: 3px;
+      background-color: #283790;
+      margin: 5px;
+      transition: all 0.5s ease;
+    }
+.change .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+    .change .line2{
+      opacity: 0;
+    }
+    .change .line3{
+      transform: rotate(45deg) translate(-5px, -6px);
+      background-color: #31a7fc;
+    }
+.menu.active{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  padding-bottom: 40px;
+z-index: 1000;
+  background-color: #F5F5F5;
+  transition: all 0.5s ease;
+
+}
+.menu.active li{
+  margin: 0.5rem 0;
+  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.menu.active li a{
+  font-size: 20px;
+  text-decoration: none;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+.intro{
+  width: 100%;
+  padding: 20px;
+}
+.intro .main-intro{
+  width: 100%;
+}
+.main-intro .left-intro{
+  width: 55%;
+}
+.left-intro img{
+  object-position: center right;
+}
+.main-intro .right-intro{
+  width: 45%;
+}
+.right-intro h2{
+  font-size: 25px;
+  line-height: 2.5rem;
+}
+.right-intro p{
+  font-size: 17px;
+}
+.what-we-do{
+  padding: 20px;
+}
+ .explanations .explain{
+padding: 20px !important;
+height: 550px;
+}
+.explain .explain-title{
+  font-size: 30px;
+}
+.explain p{
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.7rem;
+}
+.first-about img{
+  object-position: center center;
+height: 50vh;
+}
+.second-row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second-row .second-about{
+  width: 100%;
+  margin-bottom: 25px;
+}
+.second-about .info-about{
+  height: 30vh;
+}
+  }
+
+  @media screen and (max-width:480px){
+    .social-links a i{
+      font-size: 35px;
+    }
+    nav{
+      width: 95%;
+    }
+    .logo a .img-logo{
+      width: 150px;
+      height: 45px;
+    }
+    .intro .main-intro{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-intro .left-intro{
+      width: 100% !important;
+    }
+    .left-intro img{
+      object-position: center right;
+      height: 400px !important;
+    }
+    .main-intro .right-intro{
+      width: 100% !important;
+    }
+    .explanations{
+      display: flex;
+      flex-direction: column;
+    }
+    .explanations .explain{
+      width: 100%;
+      padding: 30px 20px !important;
+      height: 400px !important;
+      margin-bottom: 20px;
+      }
+      .title .title-what{
+        font-size: 20px;
+      }
+      .first-about .info-about{
+        height: 75vh !important;
+      }
+      .second-about .info-about{
+        height: 45vh !important;
+      }
+      .info-about p{
+        text-align: left;
+      }
+      .main-footer .logo img{
+width: 170px;
+height: 50px;
+      }
+      .main-footer .socials a i{
+        font-size: 40px;
+      }
+      .contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+  }
+  @media screen and (max-width:375px){
+    .second-about .info-about{
+      height: 60vh !important;
+    }
+    .first-about .info-about{
+      height: 100vh !important;
+    }
+  }
+  @media screen and (max-width:1024px){
+    .intro{
+      width: 100%;
+      padding: 20px;
+    }
+    .intro .main-intro{
+      width: 100%;
+    }
+    .main-intro .left-intro{
+      width: 55%;
+    }
+    .left-intro img{
+      object-position: center right;
+    }
+    .main-intro .right-intro{
+      width: 45%;
+    }
+    .right-intro h2{
+      font-size: 25px;
+      line-height: 2.5rem;
+    }
+    .right-intro p{
+      font-size: 17px;
+    }
+    .what-we-do{
+      padding: 20px;
+    }
+     .explanations .explain{
+    padding: 20px !important;
+    height: 550px;
+    }
+    .explain .explain-title{
+      font-size: 30px;
+    }
+    .explain p{
+      font-size: 15px;
+      text-align: left;
+      line-height: 1.7rem;
+    }
+    .first-about img{
+      object-position: center center;
+    height: 50vh;
+    }
+    .first-about .info-about{
+      height: 35vh;
+    }
+    .second-row{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .second-row .second-about{
+      width: 100%;
+      margin-bottom: 25px;
+    }
+    .second-about .info-about{
+      height: 30vh;
+    }
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #F5F5F5;
+      padding: 20px;
+      width: 100%;
+    }
+  }
