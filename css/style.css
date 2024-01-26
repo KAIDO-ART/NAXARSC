@@ -395,13 +395,25 @@ background-color: #182364;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 40px;
   }
   .contact p{
-    font-size: 20px;
+    font-size: 17px;
     color: #283790;
-    padding: 10px;
     font-family: "Roboto Mono", monospace;
+    margin-bottom: 10px;
+  }
+  .contact a{
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #182364;
+  color: white;
+  transition: 0.2s ease;
+  }
+  .contact a:hover{
+    background-color: #31a7fc;
   }
   .main-footer .copyright{
     display: flex;
