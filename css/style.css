@@ -283,7 +283,6 @@ align-items: center;
   }
   .first-about .info-about{
     width: 100%;
-    height: 45vh;
     padding: 30px;
 display: flex;
 flex-direction: column;
@@ -325,7 +324,7 @@ background-color: #182364;
   }
   .second-about .info-about{
     width: 100%;
-    height: 45vh;
+    
     padding: 30px;
 display: flex;
 flex-direction: column;
@@ -531,7 +530,7 @@ height: 50vh;
   margin-bottom: 25px;
 }
 .second-about .info-about{
-  height: 30vh;
+  
 }
   }
 
@@ -574,12 +573,6 @@ height: 50vh;
       .title .title-what{
         font-size: 20px;
       }
-      .first-about .info-about{
-        height: 85vh !important;
-      }
-      .second-about .info-about{
-        height: 50vh !important;
-      }
       .info-about p{
         text-align: left;
       }
@@ -597,14 +590,14 @@ height: 50px;
         align-items: center;
       }
   }
-  @media screen and (max-width:375px){
+/*   @media screen and (max-width:375px){
     .second-about .info-about{
       height: 60vh !important;
     }
     .first-about .info-about{
       height: 100vh !important;
     }
-  }
+  } */
   @media screen and (max-width:1024px){
     .intro{
       width: 100%;
@@ -648,9 +641,9 @@ height: 50px;
       object-position: center center;
     height: 50vh;
     }
-    .first-about .info-about{
+/*     .first-about .info-about{
       height: 40vh;
-    }
+    } */
     .second-row{
       display: flex;
       flex-direction: column;
@@ -661,9 +654,9 @@ height: 50px;
       width: 100%;
       margin-bottom: 25px;
     }
-    .second-about .info-about{
+/*     .second-about .info-about{
       height: 30vh;
-    }
+    } */
     nav{
       display: flex;
       justify-content: space-between;
