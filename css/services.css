@@ -131,7 +131,6 @@ a{
     flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 .service-card img{
     width: 100%;
