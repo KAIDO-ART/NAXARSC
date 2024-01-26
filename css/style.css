@@ -575,10 +575,10 @@ height: 50vh;
         font-size: 20px;
       }
       .first-about .info-about{
-        height: 75vh !important;
+        height: 85vh !important;
       }
       .second-about .info-about{
-        height: 45vh !important;
+        height: 50vh !important;
       }
       .info-about p{
         text-align: left;
@@ -649,7 +649,7 @@ height: 50px;
     height: 50vh;
     }
     .first-about .info-about{
-      height: 35vh;
+      height: 40vh;
     }
     .second-row{
       display: flex;
