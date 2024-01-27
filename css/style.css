@@ -212,7 +212,7 @@ a{
   background-position: center !important;
   background-size: cover !important;
   background-repeat: no-repeat;
-  background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/african-business-male-people-shaking-hands.jpg);
+  background:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/african-business-male-people-shaking-hands\ \(1\).WEBP);
 }
 .explanations .explain:nth-child(3){
   background-position: center !important;
